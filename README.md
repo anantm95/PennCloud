@@ -11,40 +11,6 @@ The private repo, [PennCloud-Code](https://github.com/anantm95/PennCloud-Code) c
 
 PennCloud is a distributed cloud platform with a highly scalable, fault-tolerant key-value datastore at the backend that supports strong consistency, efficient replication, checkpointing and recovery.
 
-# Instructions
-
-## Local Execution
-
-Clone the repository
-```sh
-git clone https://github.com/anantm95/PennCloud-Code.git
-```
-
-The following commands can be copied as a block and executed on the terminal. This will start three `front end servers` (html-server), `master storage` (master-storage), `heartbeat` (heartbeat), `SMTP server` (smtp+) and nine instances of `backend servers` (quorum-server) in three groups: 500X, 600X, 700X
-
-```sh
-cd PennCloud/bin
-mkdir ckpts
-mkdir Drive
-mkdir logs
-
-./html-server config.md -p 8000 &
-./html-server config.md -p 8001 &
-./html-server config.md -p 8002 &
-./master-storage &
-./heartbeat config.md &
-./smtp+ config.md -v &
-./quorum-server 5000 &
-./quorum-server 5001 &
-./quorum-server 5002 &
-./quorum-server 6000 &
-./quorum-server 6001 &
-./quorum-server 6002 &
-./quorum-server 7000 &
-./quorum-server 7001 &
-./quorum-server 7002 &
-```
-
 # Team Members
 * [Anant Maheshwari](www.linkedin.com/in/anantm95)
 * [Garvit Gupta](https://www.linkedin.com/in/garvitgupta)
