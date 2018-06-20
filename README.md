@@ -12,7 +12,7 @@ The private repo, [PennCloud-Code](https://github.com/anantm95/PennCloud-Code) c
 PennCloud is a distributed cloud platform with a highly scalable, fault-tolerant key-value datastore at the backend that supports strong consistency, efficient replication, checkpointing and recovery.
 
 # Team Members
-* [Anant Maheshwari](www.linkedin.com/in/anantm95)
+* [Anant Maheshwari](https://www.linkedin.com/in/anantm95)
 * [Garvit Gupta](https://www.linkedin.com/in/garvitgupta)
 * [Sahana Vijaya Prasad](https://www.linkedin.com/in/sahana-vijaya-prasad)
 * [Shiva Suri](https://github.com/shivasuri)
